@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>BAVI Moments | Instax &amp; Impressão</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@500;600;700&display=swap');
+:root{--wine:#702c37;--rose:#c87982;--pink:#f5e4e1;--cream:#fffaf7;--brown:#4c332d;--muted:#75645e;--gold:#a87835}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--brown);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+nav{position:fixed;z-index:10;left:0;right:0;top:0;background:#fffaf7ee;backdrop-filter:blur(10px);border-bottom:1px solid #eadbd7}.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font:600 27px "Playfair Display";color:var(--wine);line-height:.8}.logo small{display:block;font:italic 10px "DM Sans";letter-spacing:3px;text-align:right;color:var(--rose)}.links{display:flex;gap:22px;font-size:11px;font-weight:700}.btn{display:inline-block;background:var(--wine);color:#fff;padding:14px 22px;border-radius:99px;font-size:12px;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.outline{background:transparent;color:var(--wine);border:1px solid #cda7a5}
+.hero{padding:145px 0 80px;background:linear-gradient(135deg,#fffaf7,#f7e7e3);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}.kicker{font-size:11px;letter-spacing:3px;color:var(--rose);font-weight:700}.hero h1{font:600 clamp(45px,6vw,72px)/1.03 "Playfair Display";color:var(--wine);margin:17px 0}.hero h1 em{font-weight:500}.hero p{font-size:17px;line-height:1.75;color:var(--muted);max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.stack{position:relative;height:500px}.photo{position:absolute;background:#fff;padding:9px 9px 28px;box-shadow:0 18px 45px #5d302520}.photo img{width:100%;height:100%;object-fit:cover}.a{width:310px;height:405px;right:40px;top:10px;transform:rotate(5deg)}.b{width:245px;height:330px;left:10px;top:105px;transform:rotate(-8deg)}.c{width:220px;height:295px;right:-5px;bottom:0;transform:rotate(8deg)}
+.section{padding:85px 0}.heading{text-align:center;margin-bottom:42px}.heading h2{font:600 42px "Playfair Display";color:var(--wine);margin:8px 0}.heading p{color:var(--muted);line-height:1.65;max-width:700px;margin:auto}
+.type-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.type{border-radius:25px;padding:32px;background:#fff;border:1px solid #ead9d5}.type.instax{background:linear-gradient(145deg,#fff,#faece9)}.type.print{background:linear-gradient(145deg,#fff,#f1e9e7)}.type-head{display:flex;align-items:center;gap:15px}.device{font-size:48px}.type h3{font:600 31px "Playfair Display";color:var(--wine);margin:0}.tag{display:inline-block;margin:12px 0 16px;padding:7px 12px;border-radius:99px;background:var(--wine);color:#fff;font-size:10px;font-weight:700;letter-spacing:1px}.type p{color:var(--muted);line-height:1.65;font-size:14px}.type ul{padding-left:20px}.type li{margin:10px 0}
+.price-section{background:#f7ebe8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #ead7d2;border-radius:24px;padding:27px;position:relative}.card.best{border:2px solid var(--rose);transform:translateY(-7px)}.badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--rose);color:white;padding:6px 14px;border-radius:99px;font-size:9px;font-weight:700;white-space:nowrap}.card h3{font:600 28px "Playfair Display";color:var(--wine);margin:3px 0}.price{font-size:34px;font-weight:700;color:var(--wine);margin:15px 0}.card ul{padding-left:20px}.card li{margin:11px 0;line-height:1.45}.card .btn{width:100%;text-align:center;margin-top:10px}
+.highlight{margin:0 auto 32px;max-width:850px;border:2px solid #e2c6a3;background:#fffaf2;border-radius:22px;padding:24px;text-align:center}.highlight strong{display:block;font:600 28px "Playfair Display";color:var(--wine);margin-bottom:7px}.highlight p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+.instax-feature{background:#fff}.instax-banner{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}.featurebox{border-radius:24px;padding:30px;background:linear-gradient(145deg,#fff,#fae9e6);border:1px solid #ead6d1}.featurebox h3{font:600 31px "Playfair Display";color:var(--wine);margin:0 0 12px}.featurebox p{color:var(--muted);line-height:1.7}.courtesy{border:2px solid var(--rose);background:#fff7f5}.courtesy strong{font-size:25px;color:var(--wine)}.custom{margin-top:22px;border-radius:24px;padding:34px;background:var(--wine);color:#fff;text-align:center}.custom .camera{font-size:42px}.custom h3{font:600 35px "Playfair Display";margin:8px}.custom p{color:#f4ddda;max-width:760px;margin:0 auto;line-height:1.7}
+.combos{background:var(--pink)}.combo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.combo{background:#fff;border:1px solid #ead7d2;border-radius:24px;padding:27px;position:relative}.combo.best{border:2px solid var(--rose);transform:translateY(-7px)}.combo h3{font:600 28px "Playfair Display";color:var(--wine);margin:3px 0}.audience{color:var(--rose);font-size:12px;font-weight:700;margin-bottom:18px}.line{padding:11px 0;border-bottom:1px solid #eee0dc;display:flex;justify-content:space-between;gap:10px}.line b{color:var(--wine)}.total{margin:22px 0 15px}.total small{display:block;color:var(--muted);font-size:11px}.total strong{font-size:34px;color:var(--wine)}.combo .btn{width:100%;text-align:center}.notice{margin-top:25px;padding:15px 18px;border-radius:15px;background:#fff6f3;color:var(--muted);font-size:12px;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{background:#fff;border:1px solid #eadbd7;border-radius:18px;padding:20px}.step b{font:600 25px "Playfair Display";color:var(--rose)}.step p{font-size:13px;line-height:1.55;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery img{width:100%;height:330px;object-fit:cover;border-radius:18px;border:5px solid white}
+.cta{text-align:center;background:var(--wine);color:white;padding:75px 0}.cta h2{font:600 45px "Playfair Display";margin:0 0 10px}.cta p{color:#f1dcda}.cta .btn{background:#fff;color:var(--wine);margin-top:15px}
+footer{background:#251717;color:white;padding:40px 0}.footer{display:flex;justify-content:space-between}.footer p{color:#cbb9b4;font-size:12px}
+@media(max-width:850px){.links{display:none}.hero-grid,.type-grid,.instax-banner{grid-template-columns:1fr}.stack{height:470px}.cards,.combo-grid{grid-template-columns:1fr}.card.best,.combo.best{transform:none}.steps{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hero h1{font-size:47px}.steps,.gallery{grid-template-columns:1fr}.a{right:0}.b{left:0}.c{right:-15px}}
+
+/* V7 — visual clarity */
+:root{--wine:#702c37;--rose:#d98a96;--pink:#f8e5e2;--cream:#fffaf7;--brown:#4c332d;--muted:#75645e;--gold:#c4934f;--lilac:#eee5f5;--mint:#e4f1eb;--peach:#fbe5d5}
+body{background:#fffaf7}
+.section{padding:88px 0;position:relative}
+.heading{max-width:760px;margin:0 auto 42px;text-align:center}
+.heading h2{font-size:clamp(30px,4vw,46px);margin:10px 0 12px}
+.heading p{font-size:17px;line-height:1.65;color:var(--muted)}
+.kicker{font-weight:800;letter-spacing:.08em}
+#impressao{background:linear-gradient(135deg,#fff4ef 0%,#f8e5e2 52%,#fffaf7 100%)}
+#guestbook{background:linear-gradient(135deg,#fffaf7 0%,#eee5f5 50%,#fffaf7 100%)}
+#combos{background:linear-gradient(135deg,#f1f7f3 0%,#e4f1eb 50%,#fffaf7 100%)}
+.cards,.combo-grid{gap:26px}
+.card,.combo{border:0;border-radius:28px;box-shadow:0 14px 35px rgba(80,45,45,.10);overflow:hidden;background:#fff}
+.card{padding:0 0 25px}
+.card .card-photo,.combo .card-photo{height:190px;overflow:hidden}
+.card .card-photo img,.combo .card-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.card .card-body{padding:24px 25px 0}
+.card h3,.combo h3{font-size:24px}
+.card .price{font-size:32px;color:var(--wine);font-weight:900;margin:10px 0 18px}
+.card ul{padding-left:20px;line-height:1.65}
+.card ul li:first-child{font-weight:800;color:var(--wine)}
+.card.best{transform:translateY(-8px);box-shadow:0 20px 42px rgba(112,44,55,.20)}
+.badge{background:var(--wine);color:#fff;padding:9px 13px;border-radius:999px;display:inline-block;font-size:12px;font-weight:900;letter-spacing:.04em;margin-bottom:10px}
+.card.best .badge{margin:20px 25px 0}
+.card.best .card-body{padding-top:8px}
+.type-grid{gap:28px}
+.type{border:0!important;border-radius:28px!important;box-shadow:0 12px 30px rgba(80,45,45,.08)}
+#experiencias{background:#fff}
+#experiencias .type.print{background:var(--pink)}
+#experiencias .type.instax{background:var(--mint)}
+.combo{padding:0 0 24px}
+.combo .combo-top{padding:24px 25px 8px}
+.combo .combo-photo{height:170px;overflow:hidden}
+.combo .combo-photo img{width:100%;height:100%;object-fit:cover}
+.combo .line{margin:0 25px;padding:12px 0;border-bottom:1px solid #eee2df}
+.combo .total{margin:20px 25px 0;background:#fff3dc;border-radius:20px;padding:15px 18px}
+.combo .total strong{font-size:30px;color:var(--wine)}
+.combo.best{border:3px solid var(--gold);transform:translateY(-7px)}
+.combo.best .badge{margin:18px 25px 0}
+.notice{border-radius:22px;padding:18px 22px;background:#fff;box-shadow:0 8px 22px rgba(80,45,45,.07);margin-top:30px}
+#estrutura{background:#fff4ef}
+#como{background:#fff}
+#galeria{background:#f5edf7}
+.btn{border-radius:999px!important;font-weight:900!important}
+@media(max-width:760px){.card.best,.combo.best{transform:none}.section{padding:65px 0}.card .card-photo{height:165px}.combo .combo-photo{height:145px}}
+</style></head>
+<body>
+<nav><div class="container navin"><a class="logo" href="#inicio">BAVI <small>moments ♡</small></a><div class="links"><a href="#experiencias">EXPERIÊNCIAS</a><a href="#impressao">IMPRESSÃO</a><a href="#instax">INSTAX</a><a href="#guestbook">GUEST BOOK</a><a href="#estrutura">ESTRUTURA</a><a href="#combos">COMBOS</a></div><a class="btn" href="#contato">ORÇAMENTO</a></div></nav>
+<header class="hero" id="inicio"><div class="container hero-grid"><div><div class="kicker">BAVI MOMENTS • 2026</div><h1>Você escolhe o momento. Nós transformamos em <em>lembrança.</em></h1><p>Agora ficou fácil escolher: veja a diferença entre <strong>INSTAX</strong> e <strong>IMPRESSÃO</strong>, conheça os valores e escolha a experiência para o seu evento.</p><div class="actions"><a class="btn" href="#impressao">VER PREÇOS DE IMPRESSÃO</a><a class="btn outline" href="#instax">VER INSTAX</a></div></div><div class="stack"><div class="photo a"><img src="assets/catalogo-1.jpg"/></div><div class="photo b"><img src="assets/catalogo-2.jpg"/></div><div class="photo c"><img src="assets/catalogo-3.jpg"/></div></div></div></header>
+<section class="section" id="experiencias"><div class="container"><div class="heading"><div class="kicker">PRIMEIRO, ESCOLHA O TIPO</div><h2>📷 INSTAX ou 🖨️ IMPRESSÃO?</h2><p>Deixamos os dois formatos bem separados para não ter dúvida na hora de contratar.</p></div><div class="type-grid">
+<div class="type instax"><div class="type-head"><div class="device">📷</div><div><span class="tag">INSTAX • CÂMERA INSTANTÂNEA</span><h3>Foto sai da câmera</h3></div></div><p><strong>Alta qualidade e aquele charme instantâneo.</strong> A foto é tirada e revelada na própria câmera, preservando a espontaneidade de cada momento e o estilo vintage/retrô.</p><ul><li>Foto física revelada na hora</li><li>Feita com câmera Instax</li><li>Alta qualidade</li><li>Ideal para Guest Book e lembranças</li></ul></div>
+<div class="type print"><div class="type-head"><div class="device">🖨️</div><div><span class="tag">IMPRESSÃO • PAPEL FOTOGRÁFICO</span><h3>Polaroid impressa na hora</h3></div></div><p>Registramos o momento e enviamos a foto para nosso equipamento, que imprime em <strong>papel fotográfico de alta qualidade</strong>, no estilo Polaroid.</p><ul><li>Impressão de alta qualidade</li><li>Moldura personalizada</li><li>Corte e acabamento feitos pela equipe</li><li>Álbum personalizado</li></ul></div>
+</div></div></section>
+<section class="section price-section" id="impressao"><div class="container"><div class="heading"><div class="kicker">🖨️ IMPRESSÃO</div><h2>Combos Polaroid impressos</h2><p>Fotos em impressão de alta qualidade, com moldura e álbum personalizados.</p></div><div class="cards">
+<div class="card"><div class="card-photo"><img alt="Detalhes do serviço de impressão BAVI Moments" loading="lazy" src="assets/catalogo-1.jpg"/></div><div class="card-body"><h3>Combo Essencial</h3><div class="price">R$ 1.100,00</div><ul><li>Moldura personalizada (lembrança)</li><li>Álbum personalizado</li><li>2 atendentes</li><li>Até 2 horas</li></ul><a class="btn" href="#contato">QUERO ESTE COMBO</a></div></div>
+<div class="card"><div class="card-photo"><img alt="Detalhes do serviço de impressão BAVI Moments" loading="lazy" src="assets/catalogo-1.jpg"/></div><div class="card-body"><h3>Combo Clássico</h3><div class="price">R$ 1.400,00</div><ul><li>Moldura personalizada (lembrança)</li><li>Álbum personalizado</li><li>2 atendentes</li><li>Até 3 horas</li></ul><a class="btn" href="#contato">QUERO ESTE COMBO</a></div></div>
+<div class="card best"><div class="card-photo"><img alt="Detalhes do serviço de impressão BAVI Moments" loading="lazy" src="assets/catalogo-1.jpg"/></div><div class="card-body"><div class="badge">👑 MAIS ESCOLHIDO</div><h3>Combo Premium</h3><div class="price">R$ 1.700,00</div><ul><li>Moldura personalizada (lembrança)</li><li>Álbum personalizado</li><li>2 atendentes</li><li>Até 4 horas</li></ul><a class="btn" href="#contato">QUERO ESTE COMBO</a></div></div>
+</div><div class="notice"><strong>⏱️ O serviço se encerra ao atingir o tempo contratado.</strong></div></div></section>
+<section class="section instax-feature" id="instax"><div class="container"><div class="heading"><div class="kicker">📷 INSTAX</div><h2>Instantânea, bonita e com alta qualidade</h2><p>A foto é tirada e revelada instantaneamente na câmera, sem edição, preservando a espontaneidade de cada momento.</p></div><div class="highlight"><strong>📷 A POLAROID DA INSTAX TEM ALTA QUALIDADE</strong><p>Fotos físicas reveladas na hora, com o visual vintage/retrô que faz parte da experiência.</p></div><div class="instax-banner"><div class="featurebox"><h3>📖 Guest Book personalizado</h3><p><strong>O álbum é personalizado do jeitinho que o contratante quiser.</strong> Durante o evento, as fotos são coladas no álbum e os convidados deixam mensagens cheias de carinho.</p><p>Perfeito para casamentos, festas de 15 anos, aniversários e eventos especiais.</p></div><div class="featurebox courtesy"><h3>🎁 6 fotos dos noivos de cortesia</h3><p><strong>Os noivos ganham 6 fotos do evento como cortesia.</strong> Elas fazem parte dos pacotes de Guest Book indicados no catálogo.</p></div></div><div class="custom"><div class="camera">📖♡</div><h3>Seu Guest Book, do seu jeito.</h3><p>Você escolhe o estilo e a personalização do álbum para combinar com o seu momento. Mais do que fotos, o resultado é um livro cheio de mensagens e memórias.</p></div></div></section>
+<section class="section price-section" id="guestbook"><div class="container"><div class="heading"><div class="kicker">📷 INSTAX • SOMENTE GUEST BOOK</div><h2>Guest Book — somente Guest Book</h2><p>Aqui você está contratando somente o Guest Book. As fotos são feitas na Instax e o álbum é personalizado.</p></div><div class="cards">
+<div class="card"><div class="card-photo"><img alt="Guest Book personalizado com fotos Instax" loading="lazy" src="assets/catalogo-2.jpg"/></div><div class="card-body"><h3>Pacote Essencial</h3><div class="price">R$ 1.250,00</div><ul><li>Somente Guest Book • até 50 fotos</li><li>6 fotos dos noivos de cortesia</li><li>Álbum personalizado</li><li>2 atendentes</li><li>Até 3 horas</li></ul><a class="btn" href="#contato">ESCOLHER</a></div></div>
+<div class="card"><div class="card-photo"><img alt="Guest Book personalizado com fotos Instax" loading="lazy" src="assets/catalogo-2.jpg"/></div><div class="card-body"><h3>Pacote Clássico</h3><div class="price">R$ 2.000,00</div><ul><li>Somente Guest Book • até 100 fotos</li><li>Álbum personalizado</li><li>2 atendentes</li><li>Até 4 horas</li><li>6 fotos dos noivos de cortesia</li></ul><a class="btn" href="#contato">ESCOLHER</a></div></div>
+<div class="card best"><div class="card-photo"><img alt="Guest Book personalizado com fotos Instax" loading="lazy" src="assets/catalogo-2.jpg"/></div><div class="card-body"><div class="badge">👑 MAIS ESCOLHIDO</div><h3>Pacote Premium</h3><div class="price">R$ 2.080,00</div><ul><li>Somente Guest Book • a partir de 130 fotos</li><li>Álbum personalizado</li><li>2 atendentes</li><li>Até 5 horas</li><li>6 fotos dos noivos de cortesia</li></ul><a class="btn" href="#contato">ESCOLHER</a></div></div>
+</div></div></section>
+<section class="section combos" id="combos"><div class="container"><div class="heading"><div class="kicker">📷 INSTAX • GUEST BOOK + LEMBRANÇA</div><h2>Guest Book + Lembrança</h2><p>Um combo completo: fotos em grupo para o Guest Book + uma lembrança para cada convidado.</p></div><div class="combo-grid">
+<div class="combo"><div class="combo-photo"><img alt="Lembrança com foto Instax" loading="lazy" src="assets/catalogo-3.jpg"/></div><div class="combo-top"><h3>Combo 50 convidados</h3><div class="audience">📷 INSTAX</div></div><div class="line"><span>Guest Book</span><b>20 fotos</b></div><div class="line"><span>Lembranças</span><b>50 fotos</b></div><div class="line"><span>6 fotos dos noivos</span><b>cortesia</b></div><div class="line"><span>Álbum personalizado</span><b>incluído</b></div><div class="total"><small>Valor total do combo</small><strong>R$ 1.900</strong></div><a class="btn" href="#contato">QUERO ESTE COMBO</a></div>
+<div class="combo best"><div class="combo-photo"><img alt="Lembrança com foto Instax" loading="lazy" src="assets/catalogo-3.jpg"/></div><div class="combo-top"><div class="badge">👑 MAIS ESCOLHIDO</div><h3>Combo 100 convidados</h3><div class="audience">📷 INSTAX</div></div><div class="line"><span>Guest Book</span><b>40 fotos</b></div><div class="line"><span>Lembranças</span><b>100 fotos</b></div><div class="line"><span>6 fotos dos noivos</span><b>cortesia</b></div><div class="line"><span>Álbum personalizado</span><b>incluído</b></div><div class="total"><small>Valor total do combo</small><strong>R$ 3.300</strong></div><a class="btn" href="#contato">QUERO ESTE COMBO</a></div>
+<div class="combo"><div class="combo-photo"><img alt="Lembrança com foto Instax" loading="lazy" src="assets/catalogo-3.jpg"/></div><div class="combo-top"><h3>Combo 150 convidados</h3><div class="audience">📷 INSTAX</div></div><div class="line"><span>Guest Book</span><b>60 fotos</b></div><div class="line"><span>Lembranças</span><b>150 fotos</b></div><div class="line"><span>6 fotos dos noivos</span><b>cortesia</b></div><div class="line"><span>Álbum personalizado</span><b>incluído</b></div><div class="total"><small>Valor total do combo</small><strong>R$ 4.260</strong></div><a class="btn" href="#contato">QUERO ESTE COMBO</a></div>
+</div><div class="notice">Os combos são uma sugestão de quantidade para facilitar a escolha. As quantidades podem ser ajustadas conforme o seu evento.</div></div></section>
+<section class="section" id="estrutura">
+<div class="container">
+<div class="heading">
+<div class="kicker">PARA O EVENTO</div>
+<h2>O que precisamos no local</h2>
+<p>Para que tudo aconteça com tranquilidade e as fotos sejam produzidas sem interrupções, precisamos de uma estrutura simples no evento.</p>
+</div>
+<div class="type-grid">
+<div class="type print">
+<div class="type-head"><div class="device">📶</div><div><span class="tag">WI-FI</span><h3>Internet disponível</h3></div></div>
+<p><strong>Precisamos de Wi-Fi no local do evento</strong> para o funcionamento do serviço de impressão e envio das fotos para o equipamento.</p>
+</div>
+<div class="type instax">
+<div class="type-head"><div class="device">🖨️</div><div><span class="tag">IMPRESSÃO</span><h3>Espaço reservado</h3></div></div>
+<p>Nos pacotes de impressão, precisamos de <strong>um espaço reservado para a estrutura da BAVI Moments</strong>, onde ficará o equipamento e será feito o atendimento, impressão e acabamento das fotos.</p>
+</div>
+</div>
+<div class="highlight" style="margin-top:25px">
+<strong>✨ Estrutura organizada = fotos prontas para entregar</strong>
+<p>O espaço reservado ajuda nossa equipe a trabalhar com agilidade e mantém os materiais e equipamentos organizados durante todo o evento.</p>
+</div>
+</div>
+</section>
+<section class="section" id="como"><div class="container"><div class="heading"><div class="kicker">COMO FUNCIONA</div><h2>Do clique à lembrança</h2></div><div class="steps"><div class="step"><b>01</b><p>Fotografamos os convidados durante o evento.</p></div><div class="step"><b>02</b><p>Na Instax, a foto sai da câmera e começa a revelar.</p></div><div class="step"><b>03</b><p>Na impressão, enviamos a foto para o equipamento.</p></div><div class="step"><b>04</b><p>Fazemos acabamento, corte e proteção quando aplicável.</p></div><div class="step"><b>05</b><p>Entregamos a lembrança ou montamos o Guest Book personalizado.</p></div></div></div></section>
+<section class="section" id="galeria"><div class="container"><div class="heading"><div class="kicker">GALERIA</div><h2>Momentos que ficam</h2></div><div class="gallery"><img src="assets/catalogo-1.jpg"/><img src="assets/catalogo-2.jpg"/><img src="assets/catalogo-3.jpg"/></div></div></section>
+<section class="cta" id="contato"><div class="container"><h2>Já sabe o que combina com seu evento?</h2><p>Escolha seu pacote ou fale diretamente com a BAVI Moments pelo WhatsApp.</p><a class="btn" href="https://wa.me/5541997958275?text=Oi%20BAVI%20Moments!%20Vi%20os%20pacotes%20no%20site%20e%20quero%20fechar%20meu%20evento.">FALAR NO WHATSAPP</a></div></section>
+<footer><div class="container footer"><div><div class="logo" style="color:#fff">BAVI <small>moments ♡</small></div><p>Fotos que viram lembranças.</p></div><p>Curitiba — PR • BAVI Moments 2026</p></div></footer>
+</body></html>
